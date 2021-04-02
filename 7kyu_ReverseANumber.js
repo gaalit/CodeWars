@@ -12,7 +12,7 @@
 //2. convert number to array
 //2. reverse the array
 //3. convert array back to number
-//4. if n was initially negative muplitply by * 1
+//4. if n was initially negative muplitply by * 1, if not return as is
 
 const reverseNumber = (n) => {
   const nToArray = n.toString().split("").reverse();
