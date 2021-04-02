@@ -7,7 +7,7 @@
 
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
-//1. filter array a
+//1. filter the first array
 //2. verify at what index each element in a is at, if the index is -1, it means it's not present in b
 //3. push to new array
 
