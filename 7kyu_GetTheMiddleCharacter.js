@@ -22,11 +22,3 @@ const getMiddle = (s) => {
     return array[(l - 1) / 2];
   }
 };
-
-console.log(getMiddle("test")); //should return "es"
-
-console.log(getMiddle("testing")); //should return "t" 7 ;3
-
-console.log(getMiddle("middle")); //should return "dd"
-
-console.log(getMiddle("A")); //should return "A"
