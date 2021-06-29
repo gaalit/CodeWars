@@ -20,7 +20,6 @@
 // }
 
 
-
 const solution = (number) => {
   return number < 0 ? 0 : [...Array(number).keys()].filter(num => num % 3 === 0 || num % 5 === 0).reduce((a,b) => a + b)
 }
