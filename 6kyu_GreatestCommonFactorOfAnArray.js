@@ -19,6 +19,8 @@ const greatestCommonFactor = (array) => {
     }
   }
 
+  console.log(factors);
+
   // finding the most frequesnt and highest value
   const hashmap = factors.reduce((acc, val) => {
     acc[val] = (acc[val] || 0) + 1;
@@ -28,3 +30,5 @@ const greatestCommonFactor = (array) => {
     hashmap[a] > hashmap[b] ? a : b
   );
 };
+
+console.log(greatestCommonFactor([4, 8, 16, 24]));
