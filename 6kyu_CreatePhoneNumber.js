@@ -6,25 +6,14 @@
 // Don't forget the space after the closing parentheses!
 
 const createPhoneNumber = (numbers) => {
-  let phoneNumber = [];
-
-  phoneNumber.push(
+  return (
     "(" +
-      numbers[0] +
-      numbers[1] +
-      numbers[2] +
-      ")" +
-      " " +
-      numbers[3] +
-      numbers[4] +
-      numbers[5] +
-      "-" +
-      numbers[6] +
-      numbers[7] +
-      numbers[8] +
-      numbers[9]
+    numbers.slice(0, 3).join("") +
+    ") " +
+    numbers.slice(3, 6).join("") +
+    "-" +
+    numbers.slice(6).join("")
   );
-  return phoneNumber.join("");
 };
 
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
