@@ -7,13 +7,5 @@
 // Ex: Input: 105 --> Output: "BangBoom" Ex: Input: 9 --> Output: "Bang" Ex:Input: 25 --> Output: "Boom"
 
 const multiple = (x) => {
-  if (x % 3 === 0 && x % 5 === 0) {
-    return "BangBoom";
-  } else if (x % 3 === 0) {
-    return "Bang";
-  } else if (x % 5 === 0) {
-    return "Boom";
-  } else {
-    return "Miss";
-  }
+  x % 15 == 0 ? "BangBoom" : m % 3 == 0 ? "Bang" : m % 5 == 0 ? "Boom" : "Miss";
 };
